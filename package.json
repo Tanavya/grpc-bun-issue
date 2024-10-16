@@ -1,0 +1,1 @@
+{ "dependencies": { "@grpc/grpc-js": "^1.12.2", "@protobuf-ts/grpc-transport": "^2.9.4", "@protobuf-ts/runtime": "^2.9.4", "@protobuf-ts/runtime-rpc": "^2.9.4" } }

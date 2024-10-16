@@ -1,0 +1,15 @@
+version: v1
+plugins:
+  # TS client generated code
+  - plugin: buf.build/community/timostamm-protobuf-ts:v2.9.4
+    out: grpc-client/generated
+    opt: generate_dependencies,optimize_code_size
+
+  # Python server generated code
+  - plugin: buf.build/grpc/python:v1.62.1
+    out: grpc-server/generated
+  - plugin: buf.build/protocolbuffers/python:v25.3
+    out: grpc-server/generated
+  - plugin: buf.build/community/nipunn1313-mypy:v3.4.0
+    out: grpc-server/generated
+

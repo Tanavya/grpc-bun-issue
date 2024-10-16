@@ -1,0 +1,11 @@
+services:
+  grpc-server:
+    build:
+      context: ./grpc-server
+    container_name: grpc-server
+    environment:
+      PORT: 5001
+    volumes:
+      - ./grpc-server:/usr/src/app
+    ports:
+      - 5001:5001
